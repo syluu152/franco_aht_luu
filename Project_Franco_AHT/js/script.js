@@ -41,4 +41,13 @@ $(document).ready(function () {
             settings: "unslick" 
           }]
     });
+    $('.footer-top-items .items-title').click(function(){
+      if($(this).parent().find('.items-detail').attr('class') !== 'items-detail active' ){
+          $('.items-detail').removeClass('active');
+          $(this).parent().find('.items-detail').toggleClass('active');
+      }
+      else{
+          $(this).parent().find('.items-detail').toggleClass('active');
+      }
+  });
 });

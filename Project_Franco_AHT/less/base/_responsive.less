@@ -156,6 +156,7 @@
             &-top {
                 padding: 0 15px;
                 box-sizing: border-box;
+                width: 50%; //add1
                 img {
                     height: 100%;
                 }
@@ -165,6 +166,18 @@
                 box-sizing: border-box;
                 max-height: 196.66px;
                 overflow: hidden;
+                width: 50%; //add1
+                .banner-right-bottom-img {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    height: 100%;
+                    img {
+                        overflow: hidden;   //add1
+                        position: absolute; //add1
+                    }
+                }
             }
         }
     }
@@ -292,14 +305,73 @@
     }
 }    
 @media all and (max-width : 480px) {
-    .footer {
-        &-bottom {
-            &-inner {
-                .footer-bottom-left {
+    // .footer {
+    //     &-bottom {
+    //         &-inner {
+    //             .footer-bottom-left {
+    //                 margin-bottom: 15px;
+    //             }
+    //         }
+    //     }
+    // }
+    .footer{
+        &-top{
+            padding:20px 15px;
+            .menu {
+                .items-title {
+                    margin-left: 0px;
+                }
+                .footer-nav {
+                    .left {
+                        margin-left: 15px;
+                    }
+                }
+            }
+            &-items{
+                padding: 0;
+                &.menu, &.location{
+                    padding: 0;
+                    width: 100%;
+                }
+                &:first-child{
+                    margin-bottom: 0;
+                }
+                .items-detail{
+                    display: none;
+                    padding-bottom: 30px;
+                    &.active{
+                        display: block;
+                    }
+                    .social-icon{
+                        margin-top: 15px;
+                    } 
+                }
+                .items-title{
+                    padding-bottom: 15px;
                     margin-bottom: 15px;
+                    font-size: 14px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
+        &-bottom{
+            border: none;
+            &-inner{
+                justify-content: center;
+            }
+            &-left{
+            text-align: center;
+            }
+            &-right{
+                order: -1;
+                margin-bottom: 15px;
+                a{
+                    display: inline-block;
+                }
+            }
+       }
     }
 }
 @media all and (max-width: 375px) {
