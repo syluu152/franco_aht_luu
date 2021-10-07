@@ -302,7 +302,7 @@ button:hover {
   color: #8262b5;
 }
 .news {
-  padding: 78px 0 84px 0;
+  padding: 81px 0 84px 0;
   background-image: url(../img/bg_news.jpg);
   font-family: 'Montserrat';
 }
@@ -686,13 +686,13 @@ button:hover {
   color: #888;
 }
 .footer-top {
-  padding: 60px 0 40px 0;
+  padding: 60px 0 41px 0;
 }
 .footer-top .about-us {
   width: 25%;
 }
 .footer-top .about-us .social-icon {
-  margin-top: 42px;
+  margin-top: 44px;
 }
 .footer-top .about-us .social-icon a:hover {
   color: #ffffff;
@@ -716,7 +716,7 @@ button:hover {
   width: 50%;
 }
 .footer-top .menu .footer-nav .left {
-  max-width: 196px;
+  max-width: 195px;
 }
 .footer-top .location {
   width: 25%;
