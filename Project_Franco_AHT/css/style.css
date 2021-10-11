@@ -63,6 +63,12 @@ ul li {
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 -15px; */
+  justify-content: space-between;
+}
 body {
   font-family: 'Montserrat';
   font-size: 16px;
@@ -181,17 +187,13 @@ button:hover {
   align-items: center;
 }
 .menu-bar .container-fluid-inner .logo {
-  border: 2px solid #000000;
-  width: 196px;
-  height: 36px;
   margin-left: 15px;
 }
-.menu-bar .container-fluid-inner .logo-name {
-  padding: 6px 16px;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0.75em;
-  text-transform: uppercase;
+.menu-bar .container-fluid-inner .logo a {
+  display: flex;
+}
+.menu-bar .container-fluid-inner .logo a img {
+  width: 200px;
 }
 .menu-bar .container-fluid-inner nav .nav-icon {
   display: none;
@@ -283,8 +285,8 @@ button:hover {
   align-items: center;
 }
 .menu-bar .container-fluid-inner .menu-control .control-wishlist {
-  margin-right: 32px;
-  margin-bottom: -2px;
+  margin-right: 26px;
+  margin-bottom: -4px;
 }
 .menu-bar .container-fluid-inner .menu-control .control-wishlist i {
   font-size: 30px;
@@ -293,16 +295,16 @@ button:hover {
   color: #8262b5;
 }
 .menu-bar .container-fluid-inner .menu-control .control-cart {
-  margin-bottom: -5px;
+  margin-bottom: -4px;
 }
 .menu-bar .container-fluid-inner .menu-control .control-cart i {
-  font-size: 25px;
+  font-size: 30px;
 }
 .menu-bar .container-fluid-inner .menu-control .control-cart i:hover {
   color: #8262b5;
 }
 .news {
-  padding: 81px 0 84px 0;
+  padding: 80px 0 84px 0;
   background-image: url(../img/bg_news.jpg);
   font-family: 'Montserrat';
 }
@@ -318,7 +320,7 @@ button:hover {
   color: #8262b5;
   letter-spacing: 6px;
   font-weight: 700;
-  margin-right: -8px;
+  padding-left: 7px;
 }
 .news .title .second-title {
   font-size: 24px;
@@ -404,7 +406,7 @@ button:hover {
   color: #424242;
   letter-spacing: 0.26px;
   font-family: 'OpenSans';
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .news-slider .news-content .reaction {
   padding: 16px 18px;
@@ -438,13 +440,13 @@ button:hover {
   letter-spacing: 3.2px;
   margin-bottom: 1px;
 }
-.banner .right-button button {
+.banner .right-button .button {
   background-color: #8262b5;
   color: #ffffff;
   border: none;
   font-weight: 400;
   font-size: 14.5px;
-  padding: 11.6px 20.7px;
+  padding: 10.8px 13.5px 10.8px 20.5px;
   text-align: center;
 }
 .banner-left {
@@ -516,14 +518,14 @@ button:hover {
 .banner-left-content .left-button {
   position: absolute;
   right: -0.22%;
-  top: 161%;
+  top: 171%;
 }
-.banner-left-content .left-button button {
+.banner-left-content .left-button .button {
   border: none;
   font-weight: 400;
   font-size: 14.5px;
   color: #fff;
-  padding: 11.6px 20.45px 11.6px 17.45px;
+  padding: 10.8px 15.5px 10.8px 13.65px;
   text-align: center;
   letter-spacing: 0.02em;
   background-color: #8262b5;
@@ -533,10 +535,10 @@ button:hover {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
-  text-transform: uppercase;
 }
 .banner-right-top {
   position: relative;
+  text-transform: uppercase;
 }
 .banner-right-top img {
   display: block;
@@ -563,12 +565,13 @@ button:hover {
 }
 .banner-right-bottom .banner-bottom-info {
   position: absolute;
-  bottom: 30.9%;
+  bottom: 33.9%;
   left: 11.26%;
 }
 .banner-right-bottom .banner-bottom-info .banner-bottom-content {
-  margin-bottom: 14%;
+  margin-bottom: 22%;
   margin-left: -2%;
+  text-transform: uppercase;
 }
 .banner-right-bottom .banner-bottom-info .banner-bottom-content .detail-bottom {
   color: #000000;
@@ -689,7 +692,8 @@ button:hover {
   padding: 60px 0 41px 0;
 }
 .footer-top .about-us {
-  width: 25%;
+  max-width: 263px;
+  width: 100%;
 }
 .footer-top .about-us .social-icon {
   margin-top: 44px;
@@ -705,12 +709,12 @@ button:hover {
   margin-bottom: 22px;
 }
 .footer-top .menu {
-  padding-left: 10.8%;
   width: 50%;
+  max-width: 360px;
 }
 .footer-top .menu .items-title {
   max-width: 360px;
-  margin-left: -16px;
+  margin-left: -1px;
 }
 .footer-top .menu .footer-nav-content {
   width: 50%;
@@ -718,8 +722,12 @@ button:hover {
 .footer-top .menu .footer-nav .left {
   max-width: 195px;
 }
+.footer-top .menu .footer-nav .right {
+  max-width: 165px;
+}
 .footer-top .location {
-  width: 25%;
+  max-width: 263px;
+  width: 100%;
 }
 .footer-top .location .items-detail {
   line-height: 33px;
@@ -746,7 +754,6 @@ button:hover {
   text-decoration: underline;
 }
 .footer-top-items {
-  padding: 0 15px;
   box-sizing: border-box;
 }
 .footer-top-items .items-title {
@@ -760,6 +767,7 @@ button:hover {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.3px;
+  max-width: 360px;
 }
 .footer-top-items .items-detail .icon {
   margin-right: 15px;
@@ -769,6 +777,7 @@ button:hover {
 }
 .footer-top-items .footer-nav {
   display: flex;
+  justify-content: space-between;
 }
 .footer-top-items .footer-nav ul li {
   line-height: 30px;
@@ -779,7 +788,7 @@ button:hover {
 }
 .footer-bottom {
   border-top: 1px solid #393939;
-  padding: 23px 0;
+  padding: 24px 0;
 }
 .footer-bottom-inner {
   display: flex;
@@ -864,7 +873,7 @@ button:hover {
   .banner .title {
     font-size: 10px;
   }
-  .banner .right-button button {
+  .banner .right-button .button {
     font-size: 10.5px;
     padding: 10.6px 16.7px;
   }
@@ -877,7 +886,7 @@ button:hover {
   .banner-left-content .summary {
     font-size: 34px;
   }
-  .banner-left-content .left-button button {
+  .banner-left-content .left-button .button {
     font-size: 10.5px;
     padding: 10.6px 16.7px;
   }
@@ -966,7 +975,7 @@ button:hover {
   .banner .title {
     font-size: 8px;
   }
-  .banner .right-button button {
+  .banner .right-button .button {
     font-size: 9.5px;
     padding: 6.6px 8.7px;
   }
@@ -979,7 +988,7 @@ button:hover {
   .banner-left-content .summary {
     font-size: 16px;
   }
-  .banner-left-content .left-button button {
+  .banner-left-content .left-button .button {
     font-size: 9.5px;
     padding: 6.6px 8.7px;
   }

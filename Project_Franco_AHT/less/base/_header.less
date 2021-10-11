@@ -59,19 +59,28 @@
             height: 79px;
             
             .flex();
+            // .logo {
+            //     border: 2px solid @menu-text;
+            //     width: 196px;
+            //     height: 36px;
+            //     margin-left: 15px;
+            //    &-name {
+            //        padding: 6px 16px;
+            //         color: @menu-text;
+            //         //padding: 10px 16px;
+            //         font-size: 20px;
+            //         letter-spacing: 0.75em;
+            //         text-transform: uppercase;
+            //    }
+            // }
             .logo {
-                border: 2px solid @menu-text;
-                width: 196px;
-                height: 36px;
                 margin-left: 15px;
-               &-name {
-                   padding: 6px 16px;
-                    color: @menu-text;
-                    //padding: 10px 16px;
-                    font-size: 20px;
-                    letter-spacing: 0.75em;
-                    text-transform: uppercase;
-               }
+                a{
+                    display: flex;
+                    img{
+                        width: 200px;
+                    }
+                }
             }
             nav {
                 .nav-icon {
@@ -186,8 +195,8 @@
                 color: @menu-text;
                 .flex();
                 .control-wishlist {
-                    margin-right: 32px;
-                    margin-bottom: -2px;
+                    margin-right: 26px;
+                    margin-bottom: -4px;                
                     i {
                         font-size: 30px;
                         &:hover {
@@ -196,9 +205,9 @@
                     }
                 }
                 .control-cart {
-                    margin-bottom: -5px;
+                    margin-bottom: -4px;
                     i {
-                        font-size: 25px;
+                        font-size: 30px;
                         &:hover {
                             color: @home-button;
                         }

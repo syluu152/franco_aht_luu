@@ -14,14 +14,16 @@
     //     font-size: 20px;
     //     margin-bottom: -4.5px; //add
     // }
-    .right-button button {
+    .right-button {
+        .button {
         background-color: @home-button;
         color: @color-text-button;
         border: none;
         font-weight: 400;
         font-size: 14.5px;
-        padding: 11.6px 20.7px ;
+        padding: 10.8px 13.5px 10.8px 20.5px;
         text-align: center;
+        }
     }
 
     &-left {
@@ -88,15 +90,16 @@
             .left-button {
                 position: absolute;
                 right: -0.22%;
-                top: 161%;
-                button {
+                top: 171%;
+                .button {
                 // width: 106px;
                 //height: 40px;
                 border: none;
                 font-weight: 400;
                 font-size: 14.5px;
                 color: #fff;
-                padding: 11.6px 20.45px 11.6px 17.45px;
+                // padding: 11.6px 20.45px 11.6px 17.45px;
+                padding: 10.8px 15.5px 10.8px 13.65px;
                 text-align: center;
                 letter-spacing: 0.02em;
                 background-color: @home-button;
@@ -106,11 +109,12 @@
     }
     &-right {
         .col (33.3333%);
-        text-transform: uppercase;
+        // text-transform: uppercase;
         // position: relative;
         &-top {
             position: relative;
             // width: 50%; //add1
+            text-transform: uppercase;
             img { //add
                 display: block;
                 width: 100%;
@@ -147,12 +151,12 @@
             }
             .banner-bottom-info {
                 position: absolute;
-                bottom: 30.9%;
+                bottom: 33.9%;
                 left: 11.26%;
                 .banner-bottom-content {
-                    margin-bottom: 14%;
+                    margin-bottom: 22%;
                     margin-left: -2%;
-
+                    text-transform: uppercase;
                     .title {
                         // letter-spacing: 3px
                     }
